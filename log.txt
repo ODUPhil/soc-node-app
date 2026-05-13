@@ -1,0 +1,23 @@
+2026-05-12T21:58:18.270Z - Server started on port 3000
+2026-05-12T21:58:31.575Z - Home page accessed
+2026-05-12T22:01:59.345Z - Login attempt by user: unknown
+2026-05-12T22:01:59.345Z - User logged in: unknown
+2026-05-12T23:00:38.539Z - Server started on port 3000
+2026-05-12T23:00:45.271Z - Home page accessed
+2026-05-12T23:00:50.800Z - Login attempt by user: unknown
+2026-05-12T23:00:50.801Z - User logged in: unknown
+2026-05-12T23:00:53.184Z - Login attempt by user: unknown
+2026-05-12T23:00:53.185Z - User logged in: unknown
+2026-05-12T23:01:19.278Z - Login attempt by user: unknown
+2026-05-12T23:01:19.279Z - User logged in: unknown
+2026-05-12T23:01:22.188Z - Login attempt by user: unknown
+2026-05-12T23:01:22.189Z - User logged in: unknown
+2026-05-12T23:01:52.716Z - Server started on port 3000
+2026-05-12T23:02:01.323Z - Login attempt by user: unknown
+2026-05-12T23:02:01.324Z - User logged in: unknown
+{"timestamp":"2026-05-13T03:48:50.155Z","event":"Server started on port 3000","data":{}}
+2026-05-13T03:48:50.156Z - Server started on port 3000
+{"timestamp":"2026-05-13T03:48:59.436Z","event":"login_attempt","data":{"username":"unknown","ip":"::1","endpoint":"/login"}}
+2026-05-13T03:48:59.440Z - login_attempt
+{"timestamp":"2026-05-13T03:48:59.441Z","event":"Login attempt","data":{"user":"unknown","ip":"::1"}}
+2026-05-13T03:48:59.441Z - Login attempt
