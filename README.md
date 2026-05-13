@@ -50,3 +50,28 @@ The backend becomes accessible through:
 
 
 Application Routes
+Root route ( / ) 
+  Root endpoint validates the backend is operational:
+    GET / 
+  Response:
+    SOC Node App Running
+    
+Login Route ( /login)
+  Login route for user authentitcation telemetry:
+    Get /login?username=(username)
+  Example request:
+    http://localhost:3000/login?username=(username)
+  Functionallity of Login:
+    - Grab username data, log authentitcation, capture source IP
+
+Data Route ( /data)
+  This endpoint demostrates JSON API responses:
+    - GET /data
+
+Structured Logging System
+  Logging system to simulate SOC-style application telemetry:
+    Logging functions logs: Login attempts, endpoint acesss, source IP, timestamps.
+  Upgraded to structured JSON:
+    Upgraded to JSON because it is commonly used in SIEM platforms and SOC telemetry ingestion.
+  
+    
