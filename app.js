@@ -30,13 +30,13 @@ app.get("/login", (req, res) => { // defining a route for the login URL
     const username = req.query.username || "unknown"; // get the username from the query parameters
 
     logevent("login_attempt", { // log the event of a login attempt with additional data
-        username: username,
+        username, 
         ip: req.ip,
         endpoint: req.originalUrl
     });
 
    logevent("Login attempt", { user: username, ip: req.ip }); // log the event of a login attempt with the username and IP address
-    res.send(`Login attempt for user: ${username}`); // send a response to the client
+    res.send(`Welcome, ${username}!`); // send a response to the client
 });
 
 
