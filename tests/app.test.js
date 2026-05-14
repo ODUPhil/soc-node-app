@@ -13,9 +13,9 @@ describe("SOC App API Tests", () => {
   test("GET /login returns welcome message", async () => {
     const res = await request(app)
       .get("/login")
-      .query({ username: "phillip" });
+      .query({ username: "testuser" });
 
-    expect(res.text).toBe("Welcome, phillip!");
+    expect(res.text).toBe("Welcome, testuser!");
   });
 
   test("GET /data returns JSON status ok", async () => {
