@@ -26,7 +26,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/soc-node-app .
+          docker buildx -t ${{ secrets.DOCKER_USERNAME }}/soc-node-app .
 
 
       - name: Push Docker image
