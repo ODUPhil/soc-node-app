@@ -1,6 +1,6 @@
 const express = require("express");
 const fs = require("fs");
-const app = express(); // creating an instance of express
+const app = express(); // creating an instance of express, which is a web application framework for Node.js that simplifies the process of building web servers and APIs.
 const PORT = 3000; // defining the port number      
 
 // start of Logging system

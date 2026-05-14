@@ -21,5 +21,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Validate app syntax
-        run: node --check app.js
+      - name: Run tests
+        run: npm test
+
+      - name: Build Docker image
+        run: docker build -t soc-node-app .
+        
+      - name: Deploy (simulate)
+        run: echo "Deploying application..." # Simulate deployment step
+
