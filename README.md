@@ -92,3 +92,23 @@ Example log:
     "userAgent": "Mozilla/5.0..."
   }
 }
+```
+
+# Automated Testing
+
+Used Jest which is a JS testing framework it is responsible for running the test and checking results.
+
+Used Supertest, which simulates sending HTTP requests to the Express app, simulates users hitting endpoints and returns responses
+
+# Docker
+
+Docker is used to containerize the application, packaging the Node.js backend and its dependencies into a portable environment.
+
+This ensures the application runs consistently across different systems without requiring manual setup.
+
+In this project, Docker simulates a production-like backend service where the API runs inside an isolated container.
+
+# GitHub actions
+
+Github actions is being used to simulate CI/CD pipeline, being able to update the code and instantly push that out to the main branch for use is essential for teams in real world environments, everytime i push it out the workflow will be triggered by following the yml script in .github/workflows and builds a docker image. To improve it i can have this pushed to dockerhub or github container registry to better represent the CD of the pipeline. 
+
