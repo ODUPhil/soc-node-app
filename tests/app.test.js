@@ -24,9 +24,9 @@ describe("SOC App API Tests", () => {
   });
 
   if (require.main === module) {
-    app.listen(PORT, () => {
+    app.listen(PORT, "0.0.0.0", () => {
         logevent("Server started on port " + PORT);
-        console.log(`Server is running on http://localhost:${PORT}`);
+        console.log(`Server is running on ${PORT}`);
     });
 }
 
