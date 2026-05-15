@@ -1,4 +1,4 @@
-SOC Node App — Technical Documentation
+# SOC Node App — Technical Documentation
 Project Overview
 
 The SOC Node App project is a backend-focused learning and portfolio project designed to combine:
