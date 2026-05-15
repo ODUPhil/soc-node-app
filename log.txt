@@ -21,3 +21,5 @@
 2026-05-13T03:48:59.440Z - login_attempt
 {"timestamp":"2026-05-13T03:48:59.441Z","event":"Login attempt","data":{"user":"unknown","ip":"::1"}}
 2026-05-13T03:48:59.441Z - Login attempt
+{"timestamp":"2026-05-15T11:13:06.162Z","event":"Server started on port 3000","data":{}}
+{"timestamp":"2026-05-15T11:13:39.984Z","event":"Home page accessed","data":{"ip":"::ffff:172.17.0.1","endpoint":"/","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.4 Mobile/15E148 Safari/604.1"}}
