@@ -13,7 +13,8 @@ The purpose of the project is to simulate the early stages of a modern backend i
 
 The project was built using Node.js and Express, then expanded into a CI/CD-enabled workflow using GitHub Actions and Docker.
 
-Objectives
+
+# Objectives
   - Learn backend server architecture
   - Understand HTTP request handling
   - Implement structured app logging
@@ -34,12 +35,12 @@ Supertest	HTTP endpoint testing
 Docker:	Application containerization
 
 
-Node.Js for backend
+# Node.Js for backend
   - Backend is written with Node.js
   - Node.js allows JS to execute outside the browser, web server creation or API developemnt
   - Utilized the express framework to simplify the backend routing and HTTP handling
 
-Express Setup
+# Express Setup
  Initializes an express server:
     const express = require("express");
     const app = express();
@@ -68,10 +69,26 @@ Data Route ( /data)
   This endpoint demostrates JSON API responses:
     - GET /data
 
-Structured Logging System
-  Logging system to simulate SOC-style application telemetry:
-    Logging functions logs: Login attempts, endpoint acesss, source IP, timestamps.
-  Upgraded to structured JSON:
-    Upgraded to JSON because it is commonly used in SIEM platforms and SOC telemetry ingestion.
-  
-    
+# Structured Logging System
+  Every request is logged with structured data:
+
+- timestamp
+- event type
+- IP address
+- endpoint
+- user-agent
+
+This simulates what Security Operations Centers (SOC) analyze in real systems.
+
+Example log:
+
+```json
+{
+  "timestamp": "2026-05-15T11:00:00.000Z",
+  "event": "login_attempt",
+  "data": {
+    "ip": "172.17.0.1",
+    "endpoint": "/login",
+    "userAgent": "Mozilla/5.0..."
+  }
+}
