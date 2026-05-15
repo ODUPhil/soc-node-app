@@ -22,7 +22,12 @@ function logevent(event, data = {}) {
 // end of Logging system
                                                 
 app.get("/", (req, res) => { // defining a route for the root URL
-    logevent("Home page accessed"); // log the event of accessing the home page
+    logevent("Home page accessed", {
+        ip: req.ip,
+        endpoint: req.originalUrl,
+        userAgent: req.headers["user-agent"]
+    })
+     // log the event of accessing the home page
     res.send("SOC Node App Running"); // send a response to the client
 });
 
